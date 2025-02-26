@@ -5,7 +5,7 @@ metadata:
   name: migration-agent
   namespace: kube-system
 ---
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: migration-agent
@@ -17,7 +17,7 @@ rules:
     verbs:
     - "*"
 ---
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: migration-agent
@@ -54,7 +54,7 @@ spec:
         effect: NoExecute
       containers:
       - name: migration-agent
-        image: husseingalal/migration-agent:dev
+        image: ghcr.io/bitfisher/migration-agent:v0.1.0-rc9
         imagePullPolicy: Always
         securityContext:
           privileged: true

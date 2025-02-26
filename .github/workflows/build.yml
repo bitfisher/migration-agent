@@ -1,22 +1,22 @@
 on:
   push:
     branches:
-      - master
+    - master
   pull_request:
 
 name: Build
 permissions:
-    contents: read
+  contents: read
 jobs:
-  build-cross-arch:
+  build-linux-amd64:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Cross Arch Build
+    - name: Run CI
       run: |
         make ci
       env:
-        CROSS: "true"
         GH_TAG: ${{ github.ref_name }}
+        REPO: ghcr.io/${{ github.repository }}
