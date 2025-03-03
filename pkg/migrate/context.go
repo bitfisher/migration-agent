@@ -3,10 +3,10 @@ package migrate
 import (
 	"context"
 
-	"github.com/rancher/wrangler-api/pkg/generated/controllers/apps"
-	"github.com/rancher/wrangler-api/pkg/generated/controllers/batch"
-	"github.com/rancher/wrangler-api/pkg/generated/controllers/core"
-	"github.com/rancher/wrangler-api/pkg/generated/controllers/rbac"
+	"github.com/rancher/wrangler/pkg/generated/controllers/apps"
+	"github.com/rancher/wrangler/pkg/generated/controllers/batch"
+	"github.com/rancher/wrangler/pkg/generated/controllers/core"
+	"github.com/rancher/wrangler/pkg/generated/controllers/rbac"
 	"github.com/rancher/wrangler/pkg/apply"
 	"github.com/rancher/wrangler/pkg/start"
 	"k8s.io/client-go/kubernetes"

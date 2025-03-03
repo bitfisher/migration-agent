@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/rancher/k3s/pkg/daemons/config"
-	"github.com/rancher/k3s/pkg/etcd"
+	"github.com/k3s-io/k3s/pkg/daemons/config"
+	"github.com/k3s-io/k3s/pkg/etcd"
 	"github.com/rancher/migration-agent/pkg/certs"
 	migrationconfig "github.com/rancher/migration-agent/pkg/config"
 	etcdmigrate "github.com/rancher/migration-agent/pkg/etcd"

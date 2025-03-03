@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/rancher/k3s/pkg/cli/cmds"
+	"github.com/k3s-io/k3s/pkg/cli/cmds"
 	"github.com/rancher/rke/cluster"
 	"github.com/rancher/rke/pki"
 	"github.com/rancher/wharfie/pkg/registries"
