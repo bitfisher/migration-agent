@@ -3,7 +3,6 @@ package config
 import (
 	"context"
 	"encoding/base64"
-	"encoding/json"
 	"html/template"
 	"net/url"
 	"os"
@@ -84,7 +83,7 @@ func ExportClusterConfiguration(ctx context.Context, fullState *cluster.FullStat
 		return err
 	}
 
-	data, err := json.Marshal(args)
+	data, err := yaml.Marshal(args)
 	if err != nil {
 		return err
 	}
